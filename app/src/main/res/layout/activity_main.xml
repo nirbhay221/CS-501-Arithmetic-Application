@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!-- Operand 1 input field -->
+    <EditText
+        android:id="@+id/operand1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number|numberDecimal|numberSigned" />
+    <!-- Operand 2 input field -->
+    <EditText
+        android:id="@+id/operand2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number|numberDecimal|numberSigned" />
+    <!-- Button to rotate operand values -->
+        <Button
+            android:id="@+id/rotateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rotate Operands">
+        </Button>
+    <!-- Spinner for selecting the operation -->
+    <Spinner
+        android:id="@+id/ListSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <!-- Button to submit the calculation -->
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+    <!-- Button to clear operand fields -->
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear Operands" />
+    <!-- Result display text -->
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number|numberDecimal|numberSigned"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        />
+
+    <!-- Button to set the result as Operand 1 -->
+
+    <Button
+        android:id="@+id/resultSentFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result to Operand 1" />
+
+    <!-- Button to set the result as Operand 2 -->
+    <Button
+        android:id="@+id/resultSentSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result To Operand 2" />
+</androidx.appcompat.widget.LinearLayoutCompat>
